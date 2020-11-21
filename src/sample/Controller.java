@@ -38,7 +38,7 @@ public class Controller {
     private Map<String, String> wordsMap = new LinkedHashMap<>();
 
     private ObservableList<Person> persons = FXCollections.observableArrayList(
-            new Person("Petr", "Ivanov"),
+            new Person("Ilya", "Ivanov"),
             new Person("Vasya","Utkin"),
             new Person("Kolya", "Sidorov")
     );
