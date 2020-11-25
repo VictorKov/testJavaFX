@@ -11,9 +11,9 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.Controller">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
@@ -47,10 +47,13 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </HBox.margin>
             </TextField>
-            <Button alignment="CENTER" mnemonicParsing="false" onAction="#addWord" prefHeight="26.0" prefWidth="152.0" text="SEND" textAlignment="CENTER" textFill="#bd1b1b">
+            <Button fx:id="send" alignment="CENTER" mnemonicParsing="false" onAction="#addWord" prefHeight="26.0" prefWidth="152.0" stylesheets="@style.css" text="SEND" textAlignment="CENTER" textFill="#f2f1f1">
                <HBox.margin>
                   <Insets bottom="5.0" left="40.0" right="5.0" top="5.0" />
                </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
             </Button>
          </children>
       </HBox>

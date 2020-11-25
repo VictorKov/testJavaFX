@@ -1,4 +1,4 @@
-package sample;
+package client;
 
 import javafx.beans.property.SimpleStringProperty;
 
@@ -34,4 +34,5 @@ public class Person {
     public void setSurname(String surname) {
         this.surname.set(surname);
     }
+
 }

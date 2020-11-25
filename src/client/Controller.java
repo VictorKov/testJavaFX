@@ -1,4 +1,4 @@
-package sample;
+package client;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -10,7 +10,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 
-import java.awt.*;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -33,15 +32,11 @@ public class Controller {
     private ListView<String> listView;
 
 
-    private ObservableList<String> wordList = FXCollections.observableArrayList("Привет", "Table", "Stop");
+    private ObservableList<String> wordList = FXCollections.observableArrayList();
 
     private Map<String, String> wordsMap = new LinkedHashMap<>();
 
-    private ObservableList<Person> persons = FXCollections.observableArrayList(
-            new Person("Petr", "Ivanov"),
-            new Person("Vasya","Utkin"),
-            new Person("Kolya", "Sidorov")
-    );
+
 
 
     @FXML
@@ -52,7 +47,6 @@ public class Controller {
 
 
         listView.setItems(wordList);
-        tableView.setItems(persons);
     }
 
     @FXML
